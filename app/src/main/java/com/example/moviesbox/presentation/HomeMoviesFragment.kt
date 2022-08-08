@@ -4,16 +4,16 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.moviesbox.R
-import com.example.moviesbox.databinding.FragmentGeneralMoviesBinding
+import com.example.moviesbox.databinding.FragmentHomeMoviesBinding
 
-class GeneralMoviesFragment : Fragment(R.layout.fragment_general_movies) {
 
-    private lateinit var binding: FragmentGeneralMoviesBinding
+class HomeMoviesFragment : Fragment(R.layout.fragment_home_movies) {
+
+    private lateinit var binding: FragmentHomeMoviesBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentGeneralMoviesBinding.bind(view)
-
+        binding = FragmentHomeMoviesBinding.bind(view)
 
     }
 }
