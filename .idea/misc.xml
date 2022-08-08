@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1775" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1775" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22093353271484373" />
         <entry key="app/src/main/res/layout/fragment_detail_movie.xml" value="0.3682051282051282" />
         <entry key="app/src/main/res/layout/fragment_general_movies.xml" value="0.23020833333333332" />

@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         supportActionBar?.setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.base_color)))
-
         initBottomNavigationMenu()
 
     }
