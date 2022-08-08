@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homelMoviesFragment"
+        android:title="home"
+        android:icon="@drawable/ic_baseline_home_24"
+
+        />
+
+    <item
+        android:id="@+id/searchMovieFragment"
+        android:title="search"
+        android:icon="@drawable/ic_baseline_search_24"
+        />
+
+    <item
+        android:id="@+id/watchListFragment"
+        android:title="watch list"
+        android:icon="@drawable/ic_baseline_star_rate_24"
+        />
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homelMoviesFragment">
+
+    <fragment
+        android:id="@+id/homelMoviesFragment"
+        android:name="com.example.moviesbox.presentation.HomeMoviesFragment"
+        android:label="fragment_general_movies"
+        tools:layout="@layout/fragment_home_movies" />
+    <fragment
+        android:id="@+id/detailMovieFragment"
+        android:name="com.example.moviesbox.presentation.DetailMovieFragment"
+        android:label="fragment_detail_movie"
+        tools:layout="@layout/fragment_detail_movie" />
+    <fragment
+        android:id="@+id/searchMovieFragment"
+        android:name="com.example.moviesbox.presentation.SearchMovieFragment"
+        android:label="fragment_search_movie"
+        tools:layout="@layout/fragment_search_movie" />
+    <fragment
+        android:id="@+id/watchListFragment"
+        android:name="com.example.moviesbox.presentation.WatchListFragment"
+        android:label="fragment_watch_list"
+        tools:layout="@layout/fragment_watch_list" />
+</navigation>
