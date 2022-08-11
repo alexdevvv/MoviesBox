@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".presentation.HomeMoviesFragment">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/what_do_you_want_to_watc"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="42dp"
-        android:fontFamily="@font/poppins_black" />
-
-
-<!--    <include-->
-<!--        layout="@layout/search_view"/>-->
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/top_movies_rv"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        />
+        android:orientation="vertical"
+        tools:context=".presentation.HomeMoviesFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/what_do_you_want_to_watc"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="42dp"
+            android:fontFamily="@font/poppins_black" />
+
+
+        <include
+            layout="@layout/search_view"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/top_movies_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:spanCount="3"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
 
 
 
-</LinearLayout>
+
+
+

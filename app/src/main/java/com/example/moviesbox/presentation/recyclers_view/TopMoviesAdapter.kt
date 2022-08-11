@@ -1,14 +1,21 @@
 package com.example.moviesbox.presentation.recyclers_view
 
+import android.content.Context
+import android.graphics.Bitmap
+import android.net.Uri
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Adapter
+import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestOptions
 import com.example.moviesbox.R
 import com.example.moviesbox.data.model.TopMovie
+import com.squareup.picasso.Picasso
+import retrofit2.http.Url
+import java.net.URI
 
 class TopMoviesAdapter: RecyclerView.Adapter<TopMovieViewHolder>() {
 
@@ -21,9 +28,10 @@ class TopMoviesAdapter: RecyclerView.Adapter<TopMovieViewHolder>() {
 
     override fun onBindViewHolder(holder: TopMovieViewHolder, position: Int) {
         val topMovie = listTopMovies[position]
+        var uri: String = ("https://image.tmdb.org/t/p/w400${topMovie.poster_path}")
         Glide
             .with(holder.itemView)
-            .load("https://image.tmdb.org/t/p/w200/ + $topMovie.poster_path")
+            .load(uri)
             .apply(
                 RequestOptions()
             )

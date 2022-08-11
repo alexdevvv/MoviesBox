@@ -2,6 +2,7 @@ package com.example.moviesbox.presentation.recyclers_view
 
 import android.view.View
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviesbox.R
 
